@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 55px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.header-text {
+    font-family: "Dosis", sans-serif; 
+    font-size: 24px;
+    color: #2B1C50
+}
+
+.hero {
+    height: 400px;
+    background-color: #2B1C50;
+    /* FIX */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+}
+
+.hero-container {
+    width: fit-content;
+    align-self: center;
+    margin: 0 50px;
+}
+
+.hero-text {
+    font-family: "Inter", serif;
+    font-size: 80px;
+    color: #FFFFFF;
+    place-self: center;
+}
+
+.hero-text span {
+    color: #D0D0F6
+}
+
+.subtext-container {
+    height: 240px;
+    width: 100%;
+    background-color: #D0D0F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtext-container-inner {
+    height: 140px;
+    width: 720px;
+    border-radius: 40px;
+    background-color: #F0F1FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:768px) {
+    .subtext-container-inner {
+        margin: 20px;
+        height: fit-content;
+        text-align: center;
+    }
+}
+
+.subtext-text {
+    font-family: 'Klee One', serif;
+    font-size: 24px;
+    color: #3D2E7C;
+    padding: 15px;
+}
+
+.body-container {
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-container {
+    height: auto;
+    max-width: 720px;
+    background-color: #121212;
+    padding-top: 80px;
+}
+
+.content-text p {
+    font-family: "Dosis", sans-serif;
+    font-size: 32px;
+    color: #D0D0F6;
+    margin-bottom: 35px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.content-text li {
+    font-family: "Dosis", sans-serif;
+    font-size: 32px;
+    color: #D0D0F6;
+    margin-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    list-style: none;
+}
+
+.content-text li:last-child {
+    margin-bottom: 35px;
+}
+
+.content-text p:last-child {
+    margin-bottom: 0;
+}
+
+.button-container {
+    height: 195px;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.button {
+    height: 60px;
+    width: 200px;
+    background-color: #3D2E7C;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.button:hover {
+    background-color: #BB86FC;
+}
+
+.button-text {
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    color: #C5E1A5;
+}
+
+.footer {
+    background-color: #2B1C50;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.combined-block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.block-1 {
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: fit-content;
+}
+
+.block-1:last-child {
+    padding-right: 50px;
+}
+
+.block-1-header {
+    font-family: "Inter", sans-serif;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bold;
+    color: #534BB2;
+    white-space: nowrap;
+}
+
+.block-1 li {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    list-style: none;
+    color: #FFFFFF;
+    margin: 5px;
+    white-space: nowrap;
+}
+
+.block-1 li:first-child {
+    margin-top: 15px;
+}
+
+.block-1 .u {
+    text-decoration: underline;
+}
+
+
+.about {
+    font-family: "Dosis", monospace;
+    font-size: 18px;
+    font-weight: bold;
+    color: #BB86FC;
+    opacity: 60%;
+    margin-top: 20px;
+    white-space: nowrap;
+}
+
+
+
+@media screen and (max-width:768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;;
+    }
+
+    .combined-block {
+        flex-direction: column;
+    }
+
+    .block-1 {
+        padding-top: 0;
+    }
+
+    .block-1:first-child {
+        padding-top: 50px;
+        padding-left: 0px;
+}
+}
+
+
+
+
+
+
+
